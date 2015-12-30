@@ -444,4 +444,14 @@ class ModuleGenerator extends Generator
     {
         return $this->module->config('composer.author.email');
     }
+
+    /**
+     * Get replacement for $CLASS_NAMESPACE$.
+     *
+     * @return string
+     */
+    protected function getClassNamespaceReplacement()
+    {
+        return $this->getModuleNamespaceReplacement() . '\\' . $this->getStudlyNameReplacement() . '\Http\Controllers';
+    }
 }
