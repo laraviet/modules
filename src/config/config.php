@@ -33,6 +33,7 @@ return [
             'views/master' => 'Resources/views/layouts/master.blade.php',
             'scaffold/config' => 'Config/config.php',
             'composer' => 'composer.json',
+            'lang' => 'Resources/lang/en/module.php',
         ],
         'replacements' => [
             'start' => ['LOWER_NAME'],
@@ -49,6 +50,7 @@ return [
                 'AUTHOR_EMAIL',
                 'MODULE_NAMESPACE',
             ],
+            'lang' => ['STUDLY_NAME'],
         ],
     ],
     'paths' => [
@@ -105,7 +107,7 @@ return [
             'filter' => 'Http/Middleware',
             'request' => 'Http/Requests',
             'provider' => 'Providers',
-            'lang' => 'Resources/lang',
+            'lang' => 'Resources/lang/en',
             'views' => 'Resources/views',
             'test' => 'Tests',
         ],
