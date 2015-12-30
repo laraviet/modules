@@ -34,6 +34,7 @@ return [
             'composer' => 'composer.json',
             'lang' => 'Resources/lang/en/module.php',
             'scaffold/composers' => 'composers.php',
+            'scaffold/base-controller' => 'Http/Controllers/BaseController.php',
         ],
         'replacements' => [
             'start' => ['LOWER_NAME'],
@@ -51,6 +52,7 @@ return [
             ],
             'lang' => ['STUDLY_NAME'],
             'scaffold/composers' => ['LOWER_NAME'],
+            'scaffold/base-controller' => ['LOWER_NAME', 'CLASS_NAMESPACE'],
         ],
     ],
     'paths' => [

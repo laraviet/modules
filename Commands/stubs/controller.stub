@@ -1,8 +1,8 @@
-<?php namespace $CLASS_NAMESPACE$;
+<?php
 
-use Pingpong\Modules\Routing\Controller;
+namespace $CLASS_NAMESPACE$;
 
-class $CLASS$ extends Controller {
+class $CLASS$ extends BaseController {
 
 	public function index()
 	{
