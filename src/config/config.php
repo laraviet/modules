@@ -33,6 +33,7 @@ return [
             'scaffold/config' => 'Config/config.php',
             'composer' => 'composer.json',
             'lang' => 'Resources/lang/en/module.php',
+            'scaffold/composer' => 'composer.php',
         ],
         'replacements' => [
             'start' => ['LOWER_NAME'],
@@ -49,6 +50,7 @@ return [
                 'MODULE_NAMESPACE',
             ],
             'lang' => ['STUDLY_NAME'],
+            'scaffold/composer' => ['LOWER_NAME'],
         ],
     ],
     'paths' => [
