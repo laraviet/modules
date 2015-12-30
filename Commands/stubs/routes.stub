@@ -1,6 +1,8 @@
 <?php
 
-Route::group(['prefix' => '$LOWER_NAME$', 'namespace' => '$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers'], function()
+Route::group(['prefix' => 'admin/$LOWER_NAME$', 'namespace' => '$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers'], function()
 {
-	Route::get('/', '$STUDLY_NAME$Controller@index');
+    Route::group(['middleware' => config('$LOWER_NAME$.filter.auth')], function () {
+	   Route::get('/', '$STUDLY_NAME$Controller@index');
+    });
 });

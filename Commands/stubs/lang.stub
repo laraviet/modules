@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'menus' => [
+        'title'  => '$STUDLY_NAME$',
+        'all'    => 'All $STUDLY_NAME$s',
+        'create' => 'Add New'
+    ]
+];

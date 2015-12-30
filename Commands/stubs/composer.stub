@@ -7,6 +7,9 @@
 			"email": "$AUTHOR_EMAIL$"
 		}
 	],
+	"require": {
+        "laraviet/admin": "^2.1"
+    },
 	"autoload": {
 		"psr-4": {
 			"$MODULE_NAMESPACE$\\$STUDLY_NAME$\\": ""

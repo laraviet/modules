@@ -1,5 +1,11 @@
 <?php
 
 return [
-	'name' => '$STUDLY_NAME$'
+	'name' => '$STUDLY_NAME$',
+    'filter' => [
+        'auth' => [
+            Laraviet\Admin\Middleware\Authenticate::class,
+            Laraviet\Admin\Middleware\OnlyUser::class
+        ],
+    ],
 ];
